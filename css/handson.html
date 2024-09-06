@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu List</title>
+    <style>
+        /* Apply margin to all list items */
+        ul.menu-list li {
+            margin: 15px 0;
+            padding: 10px;
+            font-size: 18px;
+            list-style-type:none;
+        }
+
+        /* Style available menu items */
+        ul.menu-list li.available {
+            color: green;
+            opacity: 1; /* Full opacity for available items */
+        }
+
+        /* Style unavailable menu items */
+        ul.menu-list li.unavailable {
+            color: dimgrey;
+            opacity: 0.5; /* Reduced opacity for unavailable items */
+        }
+
+        /* General hover effect for all menu items */
+        ul.menu-list li:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Restaurant Menu</h1>
+    <ul class="menu-list">
+        <li class="available">Grilled Chicken</li>
+        <li class="available">Pasta Alfredo</li>
+        <li class="unavailable">Sushi</li>
+        <li class="available">Pizza Margherita</li>
+        <li class="unavailable">Caesar Salad</li>
+    </ul>
+    <ul class="snacks">
+        <li class="available">panneer pizza</li>
+        <li class="unavailable">mac&cheese</li>
+        <li class="unavailable">momos</li>
+        <li class="available">veg burger</li>
+        <li class="available">french fries</li>
+        </ul>
+
+</body>
+</html>

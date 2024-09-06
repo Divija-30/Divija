@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu List</title>
+    <style>
+        /* Apply grid layout to list items */
+        ul.menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.menu-list li {
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Apply opacity to all items */
+        ul.menu-list li {
+            opacity: 0.8;
+        }
+
+        /* Style for available menu items */
+        ul.menu-list li.available {
+            background-color: #d4edda;
+            color: green;
+        }
+
+        /* Style for unavailable menu items with lower opacity */
+        ul.menu-list li.unavailable {
+            background-color: #f8d7da;
+            color: red;
+            opacity: 0.5;
+        }
+
+        /* Optional hover effect for interaction */
+        ul.menu-list li:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menu</h1>
+    <ul class="menu-list">
+        <li class="available">Grilled Chicken</li>
+        <li class="available">Steak</li>
+        <li class="unavailable">Sushi</li>
+        <li class="available">Pasta</li>
+        <li class="unavailable">Salad</li>
+        <li class="available">Burger</li>
+    </ul>
+
+</body>
+</html>
